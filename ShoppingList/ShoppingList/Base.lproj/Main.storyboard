@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Wish List Table View Controller-->
+        <!--Shopping List Table View Controller-->
         <scene sceneID="gWk-Mv-eH7">
             <objects>
-                <tableViewController id="E7f-Xt-LVL" customClass="WishListTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="E7f-Xt-LVL" customClass="ShoppingListTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="0J1-re-cva">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WishListTableViewCell" rowHeight="74" id="RVH-z5-sHY" customClass="WishListTableViewCell" customModule="ShoppingList" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingListTableViewCell" rowHeight="74" id="RVH-z5-sHY" customClass="ShoppingListTableViewCell" customModule="ShoppingList" customModuleProvider="target">
                                 <rect key="frame" x="20" y="186.5" width="374" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RVH-z5-sHY" id="7id-G3-DYV">
@@ -100,6 +100,7 @@
                                             <state key="selected" image="star.fill" catalog="system"/>
                                         </button>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.89800184969999997" green="0.89805978539999998" blue="0.91870152949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="WPx-tO-NB7" firstAttribute="leading" secondItem="7id-G3-DYV" secondAttribute="leadingMargin" id="34t-PI-QfO"/>
                                         <constraint firstItem="ShJ-Sq-ffS" firstAttribute="leading" secondItem="WPx-tO-NB7" secondAttribute="trailing" constant="8" symbolic="YES" id="FKj-1P-T2l"/>
@@ -110,7 +111,7 @@
                                         <constraint firstItem="WPx-tO-NB7" firstAttribute="centerY" secondItem="7id-G3-DYV" secondAttribute="centerY" id="uFg-9G-st3"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.91368681190000001" green="0.91374689340000004" blue="0.93438625340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="ShJ-Sq-ffS" id="iNe-TV-Owr"/>
                                     <outlet property="doneButton" destination="WPx-tO-NB7" id="2IL-Y5-2Ku"/>

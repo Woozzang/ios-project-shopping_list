@@ -12,9 +12,9 @@
 		DD3AD20C2733434F000BD923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3AD20A2733434F000BD923 /* Main.storyboard */; };
 		DD3AD20E27334351000BD923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3AD20D27334351000BD923 /* Assets.xcassets */; };
 		DD3AD21127334351000BD923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3AD20F27334351000BD923 /* LaunchScreen.storyboard */; };
-		DD3AD219273346E9000BD923 /* WishListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3AD218273346E9000BD923 /* WishListTableViewController.swift */; };
-		DD3AD21C27334817000BD923 /* WishList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3AD21B27334817000BD923 /* WishList.swift */; };
-		DD3AD22027334972000BD923 /* WishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3AD21F27334972000BD923 /* WishListTableViewCell.swift */; };
+		DD3AD219273346E9000BD923 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3AD218273346E9000BD923 /* ShoppingListTableViewController.swift */; };
+		DD3AD21C27334817000BD923 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3AD21B27334817000BD923 /* ShoppingItem.swift */; };
+		DD3AD22027334972000BD923 /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3AD21F27334972000BD923 /* ShoppingListTableViewCell.swift */; };
 		DD3AD22527335E57000BD923 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3AD22427335E57000BD923 /* UIAlertController+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +26,9 @@
 		DD3AD20D27334351000BD923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD3AD21027334351000BD923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD3AD21227334351000BD923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD3AD218273346E9000BD923 /* WishListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTableViewController.swift; sourceTree = "<group>"; };
-		DD3AD21B27334817000BD923 /* WishList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishList.swift; sourceTree = "<group>"; };
-		DD3AD21F27334972000BD923 /* WishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTableViewCell.swift; sourceTree = "<group>"; };
+		DD3AD218273346E9000BD923 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		DD3AD21B27334817000BD923 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		DD3AD21F27334972000BD923 /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
 		DD3AD22427335E57000BD923 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,9 +65,9 @@
 				DD3AD22327335DB5000BD923 /* Extension */,
 				DD3AD21A273346F2000BD923 /* Supporting Files */,
 				DD3AD20A2733434F000BD923 /* Main.storyboard */,
-				DD3AD218273346E9000BD923 /* WishListTableViewController.swift */,
-				DD3AD21B27334817000BD923 /* WishList.swift */,
-				DD3AD21F27334972000BD923 /* WishListTableViewCell.swift */,
+				DD3AD218273346E9000BD923 /* ShoppingListTableViewController.swift */,
+				DD3AD21B27334817000BD923 /* ShoppingItem.swift */,
+				DD3AD21F27334972000BD923 /* ShoppingListTableViewCell.swift */,
 			);
 			path = ShoppingList;
 			sourceTree = "<group>";
@@ -164,9 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3AD22527335E57000BD923 /* UIAlertController+Extension.swift in Sources */,
-				DD3AD21C27334817000BD923 /* WishList.swift in Sources */,
-				DD3AD219273346E9000BD923 /* WishListTableViewController.swift in Sources */,
-				DD3AD22027334972000BD923 /* WishListTableViewCell.swift in Sources */,
+				DD3AD21C27334817000BD923 /* ShoppingItem.swift in Sources */,
+				DD3AD219273346E9000BD923 /* ShoppingListTableViewController.swift in Sources */,
+				DD3AD22027334972000BD923 /* ShoppingListTableViewCell.swift in Sources */,
 				DD3AD2052733434F000BD923 /* AppDelegate.swift in Sources */,
 				DD3AD2072733434F000BD923 /* SceneDelegate.swift in Sources */,
 			);
