@@ -11,7 +11,7 @@
         <scene sceneID="gWk-Mv-eH7">
             <objects>
                 <tableViewController id="E7f-Xt-LVL" customClass="ShoppingListTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="0J1-re-cva">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="65" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="0J1-re-cva">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,17 +30,18 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="무엇을 구매하실 건가요?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qPX-Ma-4hz">
                                             <rect key="frame" x="8" y="20.5" width="301" height="19"/>
+                                            <color key="tintColor" red="0.76401185989999998" green="0.78472775220000002" blue="0.53926950689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpP-vp-VXl">
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpP-vp-VXl">
                                             <rect key="frame" x="317" y="14.5" width="49" height="31"/>
                                             <color key="backgroundColor" red="0.89800184969999997" green="0.89805978539999998" blue="0.91870152949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="추가" cornerStyle="dynamic">
                                                 <backgroundConfiguration key="background" cornerRadius="30">
-                                                    <color key="backgroundColor" red="0.38431372549999998" green="0.56078431370000004" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.61074852940000002" green="0.66714453699999998" blue="0.50315463540000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </backgroundConfiguration>
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </buttonConfiguration>
@@ -72,13 +73,17 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingListTableViewCell" rowHeight="74" id="RVH-z5-sHY" customClass="ShoppingListTableViewCell" customModule="ShoppingList" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShoppingListTableViewCell" rowHeight="74" id="RVH-z5-sHY" customClass="ShoppingListTableViewCell" customModule="ShoppingList" customModuleProvider="target">
                                 <rect key="frame" x="20" y="186.5" width="374" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RVH-z5-sHY" id="7id-G3-DYV">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Cb-Fe-rAB">
+                                            <rect key="frame" x="0.0" y="5" width="374" height="64"/>
+                                            <color key="backgroundColor" red="0.92151570319999998" green="0.91769188639999999" blue="0.90918499230000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPx-tO-NB7">
                                             <rect key="frame" x="20" y="26" width="20" height="22"/>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,19 +105,24 @@
                                             <state key="selected" image="star.fill" catalog="system"/>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.89800184969999997" green="0.89805978539999998" blue="0.91870152949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="WPx-tO-NB7" firstAttribute="leading" secondItem="7id-G3-DYV" secondAttribute="leadingMargin" id="34t-PI-QfO"/>
                                         <constraint firstItem="ShJ-Sq-ffS" firstAttribute="leading" secondItem="WPx-tO-NB7" secondAttribute="trailing" constant="8" symbolic="YES" id="FKj-1P-T2l"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="hLM-52-nJD" secondAttribute="trailing" id="Ni9-fj-KUn"/>
+                                        <constraint firstItem="3Cb-Fe-rAB" firstAttribute="top" secondItem="7id-G3-DYV" secondAttribute="top" constant="5" id="U2x-wd-TqQ"/>
+                                        <constraint firstItem="3Cb-Fe-rAB" firstAttribute="leading" secondItem="7id-G3-DYV" secondAttribute="leading" id="W4V-Z4-Hdj"/>
                                         <constraint firstItem="hLM-52-nJD" firstAttribute="leading" secondItem="ShJ-Sq-ffS" secondAttribute="trailing" constant="8" symbolic="YES" id="gMA-DR-OPL"/>
                                         <constraint firstItem="hLM-52-nJD" firstAttribute="centerY" secondItem="7id-G3-DYV" secondAttribute="centerY" id="nbX-a1-OSG"/>
+                                        <constraint firstAttribute="trailing" secondItem="3Cb-Fe-rAB" secondAttribute="trailing" id="sAE-jw-enn"/>
                                         <constraint firstItem="ShJ-Sq-ffS" firstAttribute="centerY" secondItem="7id-G3-DYV" secondAttribute="centerY" id="to4-DD-5MF"/>
                                         <constraint firstItem="WPx-tO-NB7" firstAttribute="centerY" secondItem="7id-G3-DYV" secondAttribute="centerY" id="uFg-9G-st3"/>
+                                        <constraint firstAttribute="bottom" secondItem="3Cb-Fe-rAB" secondAttribute="bottom" constant="5" id="vdf-RR-gYn"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <outlet property="backView" destination="3Cb-Fe-rAB" id="E9f-Mx-0Hk"/>
                                     <outlet property="descriptionLabel" destination="ShJ-Sq-ffS" id="iNe-TV-Owr"/>
                                     <outlet property="doneButton" destination="WPx-tO-NB7" id="2IL-Y5-2Ku"/>
                                     <outlet property="starButton" destination="hLM-52-nJD" id="EXV-eT-ahg"/>
@@ -131,7 +141,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfu-4j-lar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-110.14492753623189" y="-90.401785714285708"/>
+            <point key="canvasLocation" x="-120" y="-91"/>
         </scene>
     </scenes>
     <resources>
