@@ -22,18 +22,6 @@ class ShoppingListTableViewController: UITableViewController {
   }
   
   @IBOutlet weak var inputTextField: UITextField!
-  
-//  var shoppingList: [ShoppingItem] = [] {
-//
-//    didSet {
-//
-//      UIView.transition(with: tableView,
-//                        duration: 0.35,
-//                        options: .transitionCrossDissolve,
-//                        animations: { self.tableView.reloadData() })
-//      }
-//  }
-  
   /*
    Realm Database only guarantees a consistent order of results if you explicitly sort them.
    */
@@ -56,6 +44,8 @@ class ShoppingListTableViewController: UITableViewController {
           self.tableView.reloadData()
           
         case .update(_, deletions: let deletions, insertions: let insertions, modifications: let modifications):
+          
+          
           
           self.shoppingList = self.localRealm.objects(ShoppingItem.self).sorted(by: { lhs, rhs in
             lhs.writtenDate < rhs.writtenDate
@@ -163,27 +153,4 @@ class ShoppingListTableViewController: UITableViewController {
 
   }
   
-//  func encodeAndSave(with item: ShoppingItem) {
-//
-//    do {
-//      let itemData = try PropertyListEncoder().encode(item)
-//
-//      /*
-//      변환에 실패하지 않았다면 배열에도 저장
-//       */
-//
-//      shoppingList.append(item)
-//
-//      /*
-//      이후 UserDefaults 에 저장
-//       */
-//
-//      UserDefaults.standard.set(itemData, forKey: "\(shoppingList.count - 1)")
-//
-//    } catch {
-//
-//      print(error.localizedDescription)
-//    }
-//  }
-
 }
