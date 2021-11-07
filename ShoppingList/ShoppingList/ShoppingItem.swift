@@ -6,12 +6,25 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct ShoppingItem: Codable {
+//struct ShoppingItem: Codable {
+//
+//  var isDone: Bool = false
+//
+//  var isStarred: Bool = false
+//
+//  var textDescription: String
+//}
+
+class ShoppingItem: Object {
+  @Persisted(primaryKey: true) var id: ObjectId
   
-  var isDone: Bool = false
+  @Persisted var isDone: Bool = false
   
-  var isStarred: Bool = false
+  @Persisted var isStarred: Bool = false
   
-  var textDescription: String
+  @Persisted var textDescription: String = ""
+  
+  @Persisted var writtenDate: Date = Date()
 }
