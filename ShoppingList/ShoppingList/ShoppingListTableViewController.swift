@@ -45,16 +45,30 @@ class ShoppingListTableViewController: UITableViewController {
           
         case .update(_, deletions: let deletions, insertions: let insertions, modifications: let modifications):
           
+          /*
+           항상 작업의 순서는 deletion -> insertions- > modification
+           */
           
+          print(deletions, insertions, modifications)
           
-          self.shoppingList = self.localRealm.objects(ShoppingItem.self).sorted(by: { lhs, rhs in
-            lhs.writtenDate < rhs.writtenDate
-          })
-          
-          self.tableView.reloadData()
+          self.tableView.performBatchUpdates {
+            self.tableView.deleteRows(at: deletions.map {
+              IndexPath(row: $0, section: 0)
+            }, with: .fade)
+            
+            self.tableView.insertRows(at: insertions.map {
+              IndexPath(row: $0, section: 0)
+            }, with: .fade)
+            
+            self.tableView.reloadRows(at: modifications.map {
+              IndexPath(row: $0, section: 0)
+            }, with: .fade)
+            
+          }
           
         case .error(_):
-          print("error")
+          
+          fatalError("error occured.")
       }
     }
   }
