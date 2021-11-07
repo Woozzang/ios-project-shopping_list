@@ -11,6 +11,12 @@ final class ShoppingListTableViewCell: UITableViewCell {
   
   static let identifier: String = String(describing: ShoppingListTableViewCell.self)
 
+  @IBOutlet weak var backView: UIView! {
+    didSet {
+      backView.layer.cornerRadius = 8
+    }
+  }
+  
   @IBOutlet weak var doneButton: UIButton!
   
   @IBOutlet private weak var descriptionLabel: UILabel!
